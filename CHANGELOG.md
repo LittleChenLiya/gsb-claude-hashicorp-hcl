@@ -1,5 +1,11 @@
 # HCL Changelog
 
+## Unreleased
+
+### Enhancements
+
+* hclsyntax: Add `PartialEval`, a static partial evaluation API that folds pure literal operations and decidable conditional branches using a set of known variables, returning the residual expression, its remaining variable dependencies, and any statically-detectable error diagnostics. Function calls are never executed during partial evaluation.
+
 ## v2.24.0 (July 7, 2025)
 
 ### Enhancements
